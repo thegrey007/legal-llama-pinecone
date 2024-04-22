@@ -3,3 +3,4 @@ llama-index-llms-azure-openai
 llama-index
 llama-index-extractors-entity
 llama-index-vector-stores-pinecone
+streamlit
