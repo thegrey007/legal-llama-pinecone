@@ -1,0 +1,2 @@
+data/index10/default__vector_store.json filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text

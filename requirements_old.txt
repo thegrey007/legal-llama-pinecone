@@ -1,0 +1,15 @@
+llama-index
+transformers
+streamlit
+requests
+pandas
+numpy
+html-parser
+regex
+tiktoken
+openai
+tiktoken
+openai
+htbuilder
+unidecode
+dateparser
