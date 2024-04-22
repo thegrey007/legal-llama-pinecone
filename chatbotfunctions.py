@@ -11,7 +11,8 @@ from embeddinggenerator import *
 
 #SECRET_API_TOKEN = os.environ["SECRET_API_TOKEN"]
 #openai.api_key = SECRET_API_TOKEN
-api_key = "289e3b5b5c7e40dd859265e4102d93ca"
+
+api_key =  os.getenv("AZURE_API_KEY")
 azure_endpoint = "https://prompt-dashboard.openai.azure.com/"
 api_version = "2024-02-15-preview"
 
