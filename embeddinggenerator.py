@@ -31,14 +31,12 @@ from llama_index.vector_stores.pinecone import PineconeVectorStore
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
 
-
 logging.basicConfig(
     stream=sys.stdout, level=logging.INFO
 )  # logging.DEBUG for more verbose output
 logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
-
-api_key = "289e3b5b5c7e40dd859265e4102d93ca"
+api_key =  os.getenv("AZURE_API_KEY")
 azure_endpoint = "https://prompt-dashboard.openai.azure.com/"
 api_version = "2024-02-15-preview"
 
@@ -61,7 +59,7 @@ embed_model = AzureOpenAIEmbedding(
 
 Settings.llm = llm
 Settings.embed_model = embed_model
-os.environ["PINECONE_API_KEY"] = "62d81cad-447c-45db-8a8e-54a5fbb372e7"
+
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
 
 @st.cache_resource
@@ -102,7 +100,7 @@ def indexgenerator(indexname):
     vector_index = VectorStoreIndex.from_vector_store(vector_store=vector_store)
     # Grab 2 search results
     retriever = VectorIndexRetriever(index=vector_index, similarity_top_k=2)
-            
+
     return retriever
 
 if __name__ == '__main__':
