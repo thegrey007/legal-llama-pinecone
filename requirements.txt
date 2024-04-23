@@ -488,12 +488,6 @@ tokenizers==0.19.1
 toml==0.10.2
 tomli==2.0.1
 toolz==0.12.1
-torch==2.2.1+cu121
-torchaudio==2.2.1+cu121
-torchdata==0.7.1
-torchsummary==1.5.1
-torchtext==0.17.1
-torchvision==0.17.1+cu121
 tornado==6.3.3
 tqdm==4.66.2
 traitlets==5.7.1
