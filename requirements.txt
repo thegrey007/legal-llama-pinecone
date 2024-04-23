@@ -1,9 +1,3 @@
-llama-index-embeddings-azure-openai
-llama-index-llms-azure-openai
-llama-index
-llama-index-extractors-entity
-llama-index-vector-stores-pinecone
-streamlit
 absl-py==1.4.0
 accelerate==0.29.3
 aiohttp==3.9.5
@@ -96,7 +90,6 @@ easydict==1.13
 ecos==2.0.13
 editdistance==0.6.2
 eerepr==0.0.4
-en-core-web-sm==3.7.1
 entrypoints==0.4
 et-xmlfile==1.1.0
 etils==1.7.0
