@@ -36,10 +36,10 @@ logging.basicConfig(
 )  # logging.DEBUG for more verbose output
 logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
-# os.environ["AZURE_API_KEY"] = "289e3b5b5c7e40dd859265e4102d93ca"
-# os.environ["PINECONE_API_KEY"] = "62d81cad-447c-45db-8a8e-54a5fbb372e7"
+# os.environ["AZURE_API_KEY"] = 
+# os.environ["PINECONE_API_KEY"] = 
 
-api_key =  "289e3b5b5c7e40dd859265e4102d93ca"
+api_key =  os.getenv("AZURE_API_KEY")
 azure_endpoint = "https://prompt-dashboard.openai.azure.com/"
 api_version = "2024-02-15-preview"
 
@@ -63,7 +63,7 @@ embed_model = AzureOpenAIEmbedding(
 Settings.llm = llm
 Settings.embed_model = embed_model
 
-pinecone_api_key = "62d81cad-447c-45db-8a8e-54a5fbb372e7"
+pinecone_api_key = os.getenv("PINECONE_API_KEY")
 
 @st.cache_resource
 def indexgenerator(indexname):
