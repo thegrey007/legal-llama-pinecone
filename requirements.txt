@@ -1,3 +1,4 @@
+streamlit==1.32.2
 transformers
 requests
 html-parser
