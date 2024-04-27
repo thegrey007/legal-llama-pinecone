@@ -12,7 +12,7 @@ llama_index.llms.azure_openai
 llama_index.embeddings.azure_openai
 pinecone-client
 google-api-python-client
-protoc-gen-openapiv2
+grpc-gateway-protoc-gen-openapiv2==0.1.0
 protobuf==3.20.3
 grpcio
 llama_index
