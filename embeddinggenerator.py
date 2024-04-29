@@ -102,7 +102,7 @@ def indexgenerator(indexname):
     # Instantiate VectorStoreIndex object from your vector_store object
     vector_index = VectorStoreIndex.from_vector_store(vector_store=vector_store)
     # Grab 2 search results
-    retriever = VectorIndexRetriever(index=vector_index, similarity_top_k=2)
+    retriever = VectorIndexRetriever(index=vector_index, similarity_top_k=3)
 
     return retriever
 
